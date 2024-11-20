@@ -13,29 +13,72 @@
 	</head>
 	<body>
 		<nav>
-			<div>
-			<ul class="nave">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">News</a></li>
-				<li><a href="#">Playlist</a></li>
-			</ul>
+			
+			<div class="nave">
+			<div class="one"><img src="laguna.jpg"></div>
+      <div class="two"><a href="#">About</a></div>
+      <div class="three"><a href="#">News</a></div>
+      <div class="four"><a href="#">Playlist</a></div>
+	  <div class="five"><a href="#">Home</a></div>
+			
 		</div>
+		
 		</nav>
 		<main>
-			<img src="mandala.jpg">
 		
-		<style> .nave {display:flex;
-		gap:5rem;
+		<style> .nave {display:grid;
+		grid-template-columns: 0.1fr,0.1fr,0.1fr,0.1fr;
+		gap:0;
+		width:1500px;
 	text-decoration: none;
-background-color: green;
+background-color:black;
+color: white;
 margin: 0rem;
-padding: 2rem;
+padding: 0.5rem;
 list-style: none;}
          .nave a{text-decoration:none;
 		color:white;	
 	}
-	main{background-image: url(..images/mandala.jpg)}
+	.one {grid-row-start: 1;
+	grid-row-end: 1;
+grid-column-start: 1;
+grid-column-end: 4;
+width: 50px;
+padding-top: 0.5rem;
+padding-left: 35rem;
+padding-bottom:1rem ;
+}
+	.two {grid-row-start: 2;
+	grid-row-end: 2;
+grid-column-start: 2;
+grid-column-end: 2;}
+	.three{grid-row-start: 2;
+	grid-row-end: 2;
+grid-column-start: 3;
+grid-column-end: 3;}
+.four{grid-row-start: 2;
+	grid-row-end: 2;
+grid-column-start: 4;
+grid-column-end: 4;}
+.five{grid-row-start: 2;
+	grid-row-end: 2;
+grid-column-start: 1;
+grid-column-end: 1;}
+
+.two :hover{color: greenyellow;}
+.three :hover{color: greenyellow;}
+.four :hover{color: greenyellow;}
+.five :hover{color: greenyellow;}
+
+.two a{font-size: 2rem;
+font-family:'Gill Sans',sans-serif;}
+.three a{font-size: 2rem;
+	font-family:'Gill Sans',sans-serif;}
+.four a{font-size: 2rem;
+	font-family:'Gill Sans',sans-serif;}
+	.five a{font-size: 2rem;
+		font-family:'Gill Sans',sans-serif;
+	padding-left: 1rem;}
 		</style>
 		<h1>Hola mundos</h1>
 		<p style="color:green">hola como estas?</p>
