@@ -25,8 +25,33 @@
 		
 		</nav>
 		<main>
-		
-		<style> .nave {display:grid;
+		<div class="principal">
+		<div class="texto">
+		<h1>Somos Pocos</h1>
+		<p class="frase">"We are few but we are crazy<br>
+			Let's change this world little by little<br>
+			We are austere, we are not liars<br>
+			We escape from the clutches of the old vultures".</p>
+	</div>
+		<div class="shop"><a  href="https://lagunapai.juntoz.com/">Shop</a></div>
+		<div class="Concerts"><a  href="https://lagunapai.com/proximos-conciertos/">Concerts</a></div>
+	</div>
+	</main>
+	<footer>
+		<p>Renato's Blog 3132150</p>
+		<a href="https://www.griffith.ie/"><img src="griffith.png"></a>
+	 </footer>
+
+	</body>
+	
+	<style> 
+	html body{width:100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+	
+	.nave {display:grid;
 		grid-template-columns: 0.1fr,0.1fr,0.1fr,0.1fr;
 		gap:0;
 		width:1500px;
@@ -34,7 +59,7 @@
 background-color:black;
 color: white;
 margin: 0rem;
-padding: 0.5rem;
+padding-right: 1.2rem;
 list-style: none;}
          .nave a{text-decoration:none;
 		color:white;	
@@ -51,19 +76,23 @@ padding-bottom:1rem ;
 	.two {grid-row-start: 2;
 	grid-row-end: 2;
 grid-column-start: 2;
-grid-column-end: 2;}
+grid-column-end: 2;
+padding-left: 2rem;}
 	.three{grid-row-start: 2;
 	grid-row-end: 2;
 grid-column-start: 3;
-grid-column-end: 3;}
+grid-column-end: 3;
+padding-left: 2rem;}
 .four{grid-row-start: 2;
 	grid-row-end: 2;
 grid-column-start: 4;
-grid-column-end: 4;}
+grid-column-end: 4;
+padding-left: 2rem;}
 .five{grid-row-start: 2;
 	grid-row-end: 2;
 grid-column-start: 1;
-grid-column-end: 1;}
+grid-column-end: 1;
+padding-left: 2rem;}
 
 .two :hover{color: greenyellow;}
 .three :hover{color: greenyellow;}
@@ -79,9 +108,65 @@ font-family:'Gill Sans',sans-serif;}
 	.five a{font-size: 2rem;
 		font-family:'Gill Sans',sans-serif;
 	padding-left: 1rem;}
+	main{padding: 10rem;
+		margin-right: 0rem;
+		margin-bottom: 0rem;
+	background-color: bisque;}
+.frase {font-size: 1.5rem;}
+
+.shop a{ border:solid,0.1rem, black;
+padding: 2rem;
+padding-bottom: 0.5rem;
+padding-top: 0.5rem;
+border-radius: 5%;
+text-decoration: none;
+font-size: 2rem;
+background-color: black;
+color: white;}
+
+.Concerts a{border:solid,0.1rem, black;
+padding: 2rem;
+padding-bottom: 0.5rem;
+padding-top: 0.5rem;
+border-radius: 5%;
+text-decoration: none;
+font-size: 2rem;
+background-color: black;
+color: white;}
+
+.shop :hover{ background-color: greenyellow;
+color: black;}
+.Concerts :hover{background-color: greenyellow;
+	color: black;}
+
+.principal{display: grid;
+	grid-template-columns: 0.1fr,0.1fr,0.1fr;}
+.texto {grid-row-start: 1;
+	grid-row-end: 3;
+grid-column-start: 1;
+grid-column-end: 1;
+padding-top: 0rem;
+border:solid,0.1rem, black;
+border-right: none;
+border-left: none;}
+.shop{grid-row-start: 1;
+	grid-row-end: 1;
+grid-column-start: 2;
+grid-column-end: 2;
+padding-left: 10rem;}
+.Concerts{grid-row-start: 1;
+	grid-row-end: 1;
+grid-column-start: 3;
+grid-column-end: 3;
+
+}
+
+
+	footer{background-color: black;
+		margin-top: 0rem;
+		padding-top: 0.5rem;
+		border-top: 0rem;
+		padding-bottom: 5rem;
+}
 		</style>
-		<h1>Hola mundos</h1>
-		<p style="color:green">hola como estas?</p>
-	</main>
-	</body>
 </html>
