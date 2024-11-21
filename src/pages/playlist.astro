@@ -1,5 +1,7 @@
 ---
 import Java from '../Cards/Java.astro'
+
+const cancion = [ {title:"Las Olas"},{title:"Libertad"},{title:"Galán de Combi"},];
 ---
 <html lang="en">
 	<head>
@@ -24,7 +26,10 @@ import Java from '../Cards/Java.astro'
 		</nav>
 		<main>
 			<p>PLAYLIST</p>
-			<Java></Java>
+			<ul>
+				{cancion.map((canciones) => (<li>{canciones.title}</li>))}
+			</ul>
+			
 		</main>
 		<footer>
 			<p>Renato's Blog 3132150</p>
