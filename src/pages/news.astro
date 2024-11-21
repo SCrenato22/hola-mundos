@@ -4,7 +4,7 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>playlist</title>
+		<title>News</title>
 	</head>
     <body>
 		<nav>
@@ -19,7 +19,13 @@
 		</div>
 		
 		</nav>
-		<main></main>
+		<main>
+            <div class="newsbox">
+            <div class="post1"><a  href="/post.astro/postone">Laguna Pai's Peruvian reggae arrives in Argentina and will pass through Mar del Plata</a></div>
+            <div class="post2"><a  href="/post.astro/posttwo">Muvid Awards 2024: Greeicy, Milena Wharton and Laguna Pai will...</a></div>
+            <div class="post3"><a  href="post.astro/postthree">LaCUNA Fest: a meeting in Lima with the main reggae bands from Latin America</a></div>
+        </div>
+        </main>
         <footer>
 			<p>Renato's Blog 3132150</p>
 			<a href="https://www.griffith.ie/"><img src="griffith.png"></a>
@@ -101,5 +107,47 @@
 		border-top: 0rem;
 		padding-bottom: 5rem;
 }
+.newsbox {display:grid;
+    grid-template-columns: 0.1fr,0.1fr,0.1fr,0.1fr;
+gap: 7rem;}
+.post1 {grid-row-start: 1;
+		grid-row-end: 1;
+	grid-column-start: 1;
+	grid-column-end: 1;
+background-color:black ;
+border-radius: 20%;
+padding: 5rem;}
+.post2 {grid-row-start: 1;
+		grid-row-end: 1;
+	grid-column-start: 2;
+	grid-column-end: 2;
+    background-color:black ;
+    border-radius: 20%;
+    padding: 5rem;}
+.post3 {grid-row-start: 1;
+		grid-row-end: 1;
+	grid-column-start: 3;
+	grid-column-end: 3;
+    background-color:black ;
+    border-radius: 20%;
+    padding: 5rem;}
+    .post1 a{text-decoration: none;
+        font-size: 1rem;
+        font-family:'Gill Sans',sans-serif;
+    color:aliceblue}
+    .post2 a{text-decoration: none;
+        font-size: 1rem;
+        font-family:'Gill Sans',sans-serif;
+    color:aliceblue}
+    .post3 a{text-decoration: none;
+        font-size: 1rem;
+        font-family:'Gill Sans',sans-serif;
+    color:aliceblue}
+    .post1 :hover{background-color: greenyellow;
+        color: black;}
+    .post2 :hover{background-color: greenyellow;
+            color: black;}
+    .post3 :hover{background-color: greenyellow;
+                color: black;}
 	</style>
     </html>
