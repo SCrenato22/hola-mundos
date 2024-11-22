@@ -21,10 +21,23 @@
 		</nav>
 		<main>
             <div class="newsbox">
-            <div class="post1"><a  href="/post.astro/postone">Laguna Pai's Peruvian reggae arrives in Argentina and will pass through Mar del Plata</a></div>
-            <div class="post2"><a  href="/post.astro/posttwo">Muvid Awards 2024: Greeicy, Milena Wharton and Laguna Pai will...</a></div>
-            <div class="post3"><a  href="post.astro/postthree">LaCUNA Fest: a meeting in Lima with the main reggae bands from Latin America</a></div>
-        </div>
+			<div class="p11">
+			<img src="paiim.jpg" class="p1">
+            <div class="post1"><a  href="/post.astro/postone">Laguna Pai's Peruvian reggae arrives in Argentina and will pass through Mar del Plata...</a></div>
+		</div>
+		<div class="p12">
+		<img src="muvid.png" class="p2">
+			<div class="post2"><a  href="/post.astro/posttwo">Muvid Awards 2024: Greeicy, Milena Wharton and Laguna Pai will participate in the first...</a></div>
+		</div>
+		<div class="p13">
+			<img src="grupo.jpg" class="p3">
+				<div class="post3"><a  href="/post.astro/postthree">LaCUNA Fest: a meeting in Lima with the main reggae bands from Latin America:Nonpalidece, Laguna Pai...</a></div>
+			</div>
+
+		
+	
+	
+		</div>
         </main>
         <footer>
 			<p>Renato's Blog 3132150</p>
@@ -39,7 +52,7 @@
 		box-sizing: border-box;}
 		
 		.nave {display:grid;
-			grid-template-columns: 0.1fr,0.1fr,0.1fr,0.1fr;
+			grid-template-columns: 0.1fr,0.1fr,auto,0.1fr;
 			gap:0;
 			width:1500px;
 		text-decoration: none;
@@ -108,29 +121,18 @@
 		padding-bottom: 5rem;
 }
 .newsbox {display:grid;
-    grid-template-columns: 0.1fr,0.1fr,0.1fr,0.1fr;
-gap: 7rem;}
-.post1 {grid-row-start: 1;
-		grid-row-end: 1;
-	grid-column-start: 1;
-	grid-column-end: 1;
+    grid-template-columns: 0.1fr,0.1fr,0.1fr;
+gap:1rem;
+}
+.post1 {
 background-color:black ;
-border-radius: 20%;
-padding: 5rem;}
-.post2 {grid-row-start: 1;
-		grid-row-end: 1;
-	grid-column-start: 2;
-	grid-column-end: 2;
+padding: 2rem;}
+.post2 {
     background-color:black ;
-    border-radius: 20%;
-    padding: 5rem;}
-.post3 {grid-row-start: 1;
-		grid-row-end: 1;
-	grid-column-start: 3;
-	grid-column-end: 3;
-    background-color:black ;
-    border-radius: 20%;
-    padding: 5rem;}
+    padding: 2rem;}
+.post3 {
+    background-color:black ; 
+    padding: 2rem;}
     .post1 a{text-decoration: none;
         font-size: 1rem;
         font-family:'Gill Sans',sans-serif;
@@ -149,5 +151,30 @@ padding: 5rem;}
             color: black;}
     .post3 :hover{background-color: greenyellow;
                 color: black;}
+	.p1 {height: 350px;
+	width: 350px;
+	padding-left: 1.2rem;
+	}
+.p2 {height: 350px;
+	width: 350px;
+	padding-left: 1.2rem;	
+}
+.p3{height: 350px;
+	width: 350px;
+	padding-left: 1.2rem;}
+
+	.p11{border:solid,0.1rem,black;
+	grid-row: 1;
+grid-column: 1;
+background-color: black;
+}
+	.p12{border:solid,0.1rem,black;
+	grid-row: 1;
+grid-column: 2;
+background-color: black}
+	.p13{border:solid,0.1rem,black;
+	grid-row: 1;
+grid-column: 3;
+background-color: black}
 	</style>
     </html>
