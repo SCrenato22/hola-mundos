@@ -2,6 +2,8 @@
 import Java from '../Cards/Java.astro'
 
 const cancion = [ {title:"Las Olas"},{title:"Libertad"},{title:"Galán de Combi"},];
+
+
 ---
 <html lang="en">
 	<head>
@@ -25,11 +27,29 @@ const cancion = [ {title:"Las Olas"},{title:"Libertad"},{title:"Galán de Combi"
 		
 		</nav>
 		<main>
-			<p>PLAYLIST</p>
-			<ul>
-				{cancion.map((canciones) => (<li>{canciones.title}</li>))}
+			<h1>PLAYLIST</h1>
+			<ul id="lcanciones">
+			<li>Las Olas</li>
+			<li>Galán de combi</li>
+			<li>Libertad</li>
 			</ul>
-			
+			<input type="text" id="inputsong" placeholder="New Song" /> 
+			<button id="btnAdd">Type Song</button>
+			<script>
+			const btnAdd= document.getElementById('btnaAdd');
+			const lcanciones= document.getElementById('lcanciones');
+			const inputsong= document.getElementById('inputsong');
+
+			btnAdd.addEventListener('click', ()=> { const newsong=inputsong.ariaValueMax.trim();
+				if (newsong) { const newelement= document.createElement('li');
+					newelement.textContent= newsong;
+					lcanciones.appendChild(newelement);
+					
+					
+				} } 
+			);
+
+			</script>
 		</main>
 		<footer>
 			<p>Renato's Blog 3132150</p>
