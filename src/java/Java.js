@@ -27,6 +27,6 @@ randombtn.addEventListener ('click', () =>{
 for (let i= cancion.length - 1;i>0;i--){
 x=cancion[(Math.floor(Math.random()*(i+1)))];
 
-document.getElementById('lcanciones')=x
+document.getElementById('lcanciones').value=x
 }})
 
