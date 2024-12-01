@@ -1,7 +1,7 @@
 ---
 import Java from '../Cards/Java.astro'
 
-const cancion = [ {title:"Las Olas"},{title:"Libertad"},{title:"Galán de Combi"},];
+const cancion = [ "Las Olas","Libertad","Galán de Combi"];
 
 
 ---
@@ -29,16 +29,15 @@ const cancion = [ {title:"Las Olas"},{title:"Libertad"},{title:"Galán de Combi"
 		<main>
 			<h1>PLAYLIST</h1>
 			<ul id="lcanciones">
-			<li>Las Olas</li>
-			<li>Galán de combi</li>
-			<li>Libertad</li>
+			{cancion.map((cancion)=>(<li>{cancion}</li>))}
 			</ul>
 			<input type="text" id="inputsong" placeholder="New Song" /> 
-			<button id="btnAdd">Type Song</button>
-
+			<button id="btnAdd">Submit</button>
+            <button id="randombtn">Random</button>
 			<script src="/src/java/Java.js">
 
 			</script>
+
 		</main>
 		<footer>
 			<p>Renato's Blog 3132150</p>

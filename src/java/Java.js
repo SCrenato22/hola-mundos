@@ -1,21 +1,32 @@
+
+
 const btnAdd = document.getElementById('btnAdd');
+const randombtn = document.getElementById('randombtn');
 const lcanciones = document.getElementById('lcanciones');
 const inputsong = document.getElementById('inputsong');
+const cancion = [ "Las Olas","Libertad","Galán de Combi"];
+let x;
 
-// Agrega un evento de clic al botón
 btnAdd.addEventListener('click', () => {
-  const nuevaCancion = inputsong.value.trim(); // Obtiene el valor del input
-  if (nuevaCancion) {
-    // Crea un nuevo elemento <li>
-    const nuevoElemento = document.createElement('li');
-    nuevoElemento.textContent = nuevaCancion;
+  const newpai= inputsong.value.trim(); 
+  if (newpai) {
+   
+    const newele = document.createElement('li');
+    newele.textContent = newpai;
 
-    // Agrega el nuevo elemento a la lista
-    lcanciones.appendChild(nuevoElemento);
+ 
+    lcanciones.appendChild(newele);
 
-    // Limpia el campo de entrada
+   
     inputsong.value = '';
   } else {
-    alert('Por favor, ingresa el nombre de una canción.');
+    alert('');
   }
 });
+randombtn.addEventListener ('click', () =>{
+for (let i= cancion.length - 1;i>0;i--){
+x=cancion[(Math.floor(Math.random()*(i+1)))];
+
+document.getElementById('lcanciones')=x
+}})
+
